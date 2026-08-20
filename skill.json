@@ -1,0 +1,35 @@
+{
+  "name": "genpark-multimodal-podcast-filler-word-remover-smart-cutter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Text-aligned podcast audio/video editor, automatic filler word remover & viral short clip cutter.",
+  "author": "genpark",
+  "category": "media",
+  "tags": [
+    "audio-editor",
+    "filler-word-remover",
+    "podcast-clipper",
+    "smart-cutter",
+    "descript"
+  ],
+  "inputs": {
+    "audio_transcript_segments": {
+      "type": "array"
+    },
+    "target_clip_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "filler_words_removed_count": {
+      "type": "integer"
+    },
+    "time_saved_seconds": {
+      "type": "number"
+    },
+    "viral_clip_timestamps": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
